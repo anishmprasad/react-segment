@@ -1,0 +1,102 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "react-segment@^0.1.0",
+        "scope": null,
+        "escapedName": "react-segment",
+        "name": "react-segment",
+        "rawSpec": "^0.1.0",
+        "spec": ">=0.1.0 <0.1.0",
+        "type": "range"
+      },
+      "/Users/ghost/Downloads/react-KT"
+    ]
+  ],
+  "_from": "react-segment@>=0.1.0 <0.1.0",
+  "_id": "react-segment@0.1.0",
+  "_inCache": true,
+  "_location": "/react-segment",
+  "_nodeVersion": "7.10.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/react-segment-0.1.0.tgz_1496238181363_0.8129479601047933"
+  },
+  "_npmUser": {
+    "name": "anish",
+    "email": "anish.m.prasad@gmail.com"
+  },
+  "_npmVersion": "4.2.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-segment@^0.1.0",
+    "scope": null,
+    "escapedName": "react-segment",
+    "name": "react-segment",
+    "rawSpec": "^0.1.0",
+    "spec": ">=0.1.0 <0.1.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-segment/-/react-segment-0.1.0.tgz",
+  "_shasum": "5c9afbdf12242ab499d8bd2fbfeeb1433c441fae",
+  "_shrinkwrap": null,
+  "_spec": "react-segment@^0.1.0",
+  "_where": "/Users/ghost/Downloads/react-KT",
+  "author": {
+    "name": "Anish M Prasad",
+    "email": "anish.m.prasad@gmail.com",
+    "url": "http://www.trailercafe.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/anish/react-segment/issues"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "uuid": "^2.0.1",
+    "vis": "^4.18.1"
+  },
+  "description": "A react component to render network graphs using vis.js",
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-preset-env": "^1.1.8",
+    "babel-preset-stage-3": "^6.22.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "5c9afbdf12242ab499d8bd2fbfeeb1433c441fae",
+    "tarball": "https://registry.npmjs.org/react-segment/-/react-segment-0.1.0.tgz"
+  },
+  "gitHead": "e037c5e7e6b3c84a55d1e13e7cd64e81ebf6e3b0",
+  "homepage": "https://github.com/anish/react-segment#readme",
+  "keywords": [
+    "react-component",
+    "react",
+    "graph",
+    "network",
+    "jsx",
+    "hammerjs"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "maintainers": [
+    {
+      "name": "anish",
+      "email": "anish.m.prasad@gmail.com"
+    }
+  ],
+  "name": "react-segment",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "react": "^15.3.0"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anishmprasad/react-segment.git"
+  },
+  "scripts": {},
+  "version": "0.1.0"
+}
