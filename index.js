@@ -1,89 +1,119 @@
-(function(){
-    
-      // Create a queue, but don't obliterate an existing one!
-      var analytics = window.analytics = window.analytics || [];
-    
-      // If the real analytics.js is already on the page return.
-      if (analytics.initialize) return;
-    
-      // If the snippet was invoked already show an error.
-      if (analytics.invoked) {
-        if (window.console && console.error) {
-          console.error('Segment snippet included twice.');
-        }
-        return;
-      }
-    
-      // Invoked flag, to make sure the snippet
-      // is never invoked twice.
-      analytics.invoked = true;
-    
-      // A list of the methods in Analytics.js to stub.
-      analytics.methods = [
-        'trackSubmit',
-        'trackClick',
-        'trackLink',
-        'trackForm',
-        'pageview',
-        'identify',
-        'reset',
-        'group',
-        'track',
-        'ready',
-        'alias',
-        'debug', 
-        'page',
-        'once',
-        'off',
-        'on'
-      ];
-    
-      // Define a factory to create stubs. These are placeholders
-      // for methods in Analytics.js so that you never have to wait
-      // for it to load to actually record data. The `method` is
-      // stored as the first argument, so we can replay the data.
-      analytics.factory = function(method){
-        return function(){
-          var args = Array.prototype.slice.call(arguments);
-          args.unshift(method);
-          analytics.push(args);
-          return analytics;
-        };
-      };
-    
-      // For each of our methods, generate a queueing stub.
-      for (var i = 0; i < analytics.methods.length; i++) {
-        var key = analytics.methods[i];
-        analytics[key] = analytics.factory(key);
-      }
-    
-      // Define a method to load Analytics.js from our CDN,
-      // and that will be sure to only ever load it once.
-      analytics.load = function(key){
-        // Create an async script element based on your key.
-        var script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.async = true;
-        script.src = ('https:' === document.location.protocol
-          ? 'https://' : 'http://')
-          + '<%= settings.host %>/analytics.js/v1/'
-          + key + '/analytics.min.js';
-    
-        // Insert our script next to the first script element.
-        var first = document.getElementsByTagName('script')[0];
-        first.parentNode.insertBefore(script, first);
-      };
-    
-      // Add a version to keep track of what's in the wild.
-      analytics.SNIPPET_VERSION = '4.0.0';
-    
-      // Load Analytics.js with your key, which will automatically
-      // load the tools you've enabled for your account. Boosh!
-      analytics.load("<%= settings.apiKey %>");
-    
-      // Make the first page call to load the integrations. If
-      // you'd like to manually name or tag the page, edit or
-      // move this call however you'd like.
-      '<%= settings.page %>'
-    })();
-    
+
+/**
+ * Module Dependencies.
+ */
+
+var handlebars = require('handlebars');
+var read = require('fs').readFileSync;
+var fmt = require('util').format;
+var join = require('path').join;
+var minify = require('minify');
+var path = require('path');
+var fs = require('fs');
+
+/**
+ * Compression options.
+ */
+
+var compress = {
+  mangle: { except: ['analytics'] },
+  compress: { sequences: false },
+};
+
+/**
+ * Has convenience alias
+ */
+
+var has = Object.prototype.hasOwnProperty;
+
+/**
+ * The template file to use.
+ */
+
+var template = read(join(__dirname, './snippet.js'), 'utf-8');
+
+/**
+ * The compiled versions of the template
+ */
+
+var snippet = handlebars.compile(template);
+
+/**
+ * Return the maxified templating function.
+ *
+ * @param {Object} options (optional)
+ * @return {String} rendered
+ */
+
+exports.max = function(options){
+  var locals = defaults(options);
+  var locals = defaults(options);
+  locals.load = fmt('analytics.load(%s);', JSON.stringify(locals.apiKey));
+  locals.page = renderPage(locals.page);
+  return snippet(locals);
+};
+
+/**
+ * Return the minified templating function.
+ *
+ * @param {Object} options
+ * @return {String} min
+ */
+
+exports.min = function(options){
+  var js = exports.max(options);
+  var min = minify.js(js, compress);
+  var regexp = /(analytics.load\(|analytics.page\(|}}\(\);)/g;
+  return linebreak(min, regexp);
+};
+
+/**
+ * Back an options object with the snippet defaults.
+ *
+ * @param {Object} options (optional)
+ * @return {Object}
+ */
+
+function defaults(options){
+  options || (options = {});
+  options.apiKey || (options.apiKey = 'YOUR_API_KEY');
+  options.host || (options.host = 'cdn.segment.com');
+  if (!has.call(options, 'page')) options.page = true;
+  return options;
+}
+
+/**
+ * Handlebars helper which will render the window.analytics.page call.
+ *
+ * By default just render the empty call, adding whatever arguments are
+ * passed in explicitly.
+ *
+ * @param {Object|Boolean} page options (name, category, properties)
+ * @return {String}
+ */
+
+function renderPage(page){
+  if (!page) return '';
+
+  var args = [];
+
+  if (page.category) args.push(page.category);
+  if (page.name) args.push(page.name);
+  if (page.properties) args.push(page.properties);
+
+  return fmt('analytics.page(%s);', args
+    .map(JSON.stringify)
+    .join(', '));
+}
+
+/**
+ * Preserve the linebreak for a `regex` in `string`
+ *
+ * @param {String} string
+ * @param {RegExp} regex
+ * @return {String}
+ */
+
+function linebreak(string, regex){
+  return string.replace(regex, '\n$1');
+}

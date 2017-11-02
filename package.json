@@ -2,25 +2,25 @@
   "_args": [
     [
       {
-        "raw": "react-segment@^0.1.2",
+        "raw": "react-segment@^0.1.3",
         "scope": null,
         "escapedName": "react-segment",
         "name": "react-segment",
-        "rawSpec": "^0.1.2",
-        "spec": ">=0.1.2 <0.1.2",
+        "rawSpec": "^0.1.3",
+        "spec": ">=0.1.3 <0.1.3",
         "type": "range"
       },
       "/Users/ghost/Downloads/react-KT"
     ]
   ],
-  "_from": "react-segment@>=0.1.2 <0.1.2",
-  "_id": "react-segment@0.1.2",
+  "_from": "react-segment@>=0.1.3 <0.1.3",
+  "_id": "react-segment@0.1.3",
   "_inCache": true,
   "_location": "/react-segment",
   "_nodeVersion": "7.10.0",
   "_npmOperationalInternal": {
     "host": "s3://npm-registry-packages",
-    "tmp": "tmp/react-segment-0.1.2.tgz_1496238181363_0.8129479601047933"
+    "tmp": "tmp/react-segment-0.1.3.tgz_1496238181363_0.8129479601047933"
   },
   "_npmUser": {
     "name": "anish",
@@ -29,21 +29,21 @@
   "_npmVersion": "4.2.0",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "react-segment@^0.1.2",
+    "raw": "react-segment@^0.1.3",
     "scope": null,
     "escapedName": "react-segment",
     "name": "react-segment",
-    "rawSpec": "^0.1.2",
-    "spec": ">=0.1.2 <0.1.2",
+    "rawSpec": "^0.1.3",
+    "spec": ">=0.1.3 <0.1.3",
     "type": "range"
   },
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/react-segment/-/react-segment-0.1.2.tgz",
+  "_resolved": "https://registry.npmjs.org/react-segment/-/react-segment-0.1.3.tgz",
   "_shasum": "5c9afbdf12242ab499d8bd2fbfeeb1433c441fae",
   "_shrinkwrap": null,
-  "_spec": "react-segment@^0.1.2",
+  "_spec": "react-segment@^0.1.3",
   "_where": "/Users/ghost/Downloads/react-KT",
   "author": {
     "name": "Anish M Prasad",
@@ -85,7 +85,7 @@
   "directories": {},
   "dist": {
     "shasum": "5c9afbdf12242ab499d8bd2fbfeeb1433c441fae",
-    "tarball": "https://registry.npmjs.org/react-segment/-/react-segment-0.1.2.tgz"
+    "tarball": "https://registry.npmjs.org/react-segment/-/react-segment-0.1.3.tgz"
   },
   "gitHead": "e037c5e7e6b3c84a55d1e13e7cd64e81ebf6e3b0",
   "homepage": "https://github.com/anish/react-segment#readme",
@@ -113,5 +113,5 @@
     "url": "git+https://github.com/anishmprasad/react-segment.git"
   },
   "scripts": {},
-  "version": "0.1.2"
+  "version": "0.1.3"
 }
