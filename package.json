@@ -2,25 +2,25 @@
   "_args": [
     [
       {
-        "raw": "react-segment@^0.1.1",
+        "raw": "react-segment@^0.1.2",
         "scope": null,
         "escapedName": "react-segment",
         "name": "react-segment",
-        "rawSpec": "^0.1.1",
-        "spec": ">=0.1.1 <0.1.1",
+        "rawSpec": "^0.1.2",
+        "spec": ">=0.1.2 <0.1.2",
         "type": "range"
       },
       "/Users/ghost/Downloads/react-KT"
     ]
   ],
-  "_from": "react-segment@>=0.1.1 <0.1.1",
-  "_id": "react-segment@0.1.1",
+  "_from": "react-segment@>=0.1.2 <0.1.2",
+  "_id": "react-segment@0.1.2",
   "_inCache": true,
   "_location": "/react-segment",
   "_nodeVersion": "7.10.0",
   "_npmOperationalInternal": {
     "host": "s3://npm-registry-packages",
-    "tmp": "tmp/react-segment-0.1.1.tgz_1496238181363_0.8129479601047933"
+    "tmp": "tmp/react-segment-0.1.2.tgz_1496238181363_0.8129479601047933"
   },
   "_npmUser": {
     "name": "anish",
@@ -29,21 +29,21 @@
   "_npmVersion": "4.2.0",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "react-segment@^0.1.1",
+    "raw": "react-segment@^0.1.2",
     "scope": null,
     "escapedName": "react-segment",
     "name": "react-segment",
-    "rawSpec": "^0.1.1",
-    "spec": ">=0.1.1 <0.1.1",
+    "rawSpec": "^0.1.2",
+    "spec": ">=0.1.2 <0.1.2",
     "type": "range"
   },
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/react-segment/-/react-segment-0.1.1.tgz",
+  "_resolved": "https://registry.npmjs.org/react-segment/-/react-segment-0.1.2.tgz",
   "_shasum": "5c9afbdf12242ab499d8bd2fbfeeb1433c441fae",
   "_shrinkwrap": null,
-  "_spec": "react-segment@^0.1.1",
+  "_spec": "react-segment@^0.1.2",
   "_where": "/Users/ghost/Downloads/react-KT",
   "author": {
     "name": "Anish M Prasad",
@@ -54,30 +54,45 @@
     "url": "https://github.com/anish/react-segment/issues"
   },
   "dependencies": {
-    "lodash": "^4.17.4",
-    "uuid": "^2.0.1",
-    "vis": "^4.18.1"
+    "@ndhoule/map": "^2.0.1"
   },
-  "description": "A react component to render network graphs using vis.js",
+  "description": "A react component for segment.io",
   "devDependencies": {
-    "babel-cli": "^6.22.2",
-    "babel-preset-env": "^1.1.8",
-    "babel-preset-stage-3": "^6.22.0"
+    "@segment/clear-env": "^2.0.3",
+    "@segment/eslint-config": "^3.4.0",
+    "browserify": "^13.1.0",
+    "browserify-istanbul": "^2.0.0",
+    "eslint": "^2.13.1",
+    "eslint-plugin-mocha": "^2.2.0",
+    "eslint-plugin-require-path-exists": "^1.1.5",
+    "istanbul": "^0.4.5",
+    "karma": "^1.1.0",
+    "karma-browserify": "^5.0.4",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-coverage": "^1.0.0",
+    "karma-junit-reporter": "^1.0.0",
+    "karma-mocha": "1.0.1",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-sauce-launcher": "^1.0.0",
+    "karma-spec-reporter": "0.0.26",
+    "lodash": "^4.15.0",
+    "matcha": "^0.7.0",
+    "mkdirp": "^0.5.1",
+    "mocha": "~1.12.1",
+    "sinon": "^1.17.5",
+    "uglify-js": "~2.4.0"
   },
   "directories": {},
   "dist": {
     "shasum": "5c9afbdf12242ab499d8bd2fbfeeb1433c441fae",
-    "tarball": "https://registry.npmjs.org/react-segment/-/react-segment-0.1.1.tgz"
+    "tarball": "https://registry.npmjs.org/react-segment/-/react-segment-0.1.2.tgz"
   },
   "gitHead": "e037c5e7e6b3c84a55d1e13e7cd64e81ebf6e3b0",
   "homepage": "https://github.com/anish/react-segment#readme",
   "keywords": [
     "react-component",
     "react",
-    "graph",
-    "network",
-    "jsx",
-    "hammerjs"
+    "segmentio"
   ],
   "license": "MIT",
   "main": "lib/index.js",
@@ -98,5 +113,5 @@
     "url": "git+https://github.com/anishmprasad/react-segment.git"
   },
   "scripts": {},
-  "version": "0.1.1"
+  "version": "0.1.2"
 }
