@@ -1,4 +1,4 @@
-# react-segement
+# react-segment
 Segment.io integration for React.js
 
 
