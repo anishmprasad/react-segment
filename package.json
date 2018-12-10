@@ -51,7 +51,7 @@
     "url": "http://www.trailercafe.com/"
   },
   "bugs": {
-    "url": "https://github.com/anish/react-segment/issues"
+    "url": "https://github.com/anishmprasad/react-segment/issues"
   },
   "dependencies": {
     "@ndhoule/map": "^2.0.1"
@@ -87,7 +87,7 @@
     "tarball": "https://registry.npmjs.org/react-segment/-/react-segment-0.1.7.tgz"
   },
   "gitHead": "e037c5e7e6b3c84a55d1e13e7cd64e81ebf6e3b0",
-  "homepage": "https://github.com/anish/react-segment#readme",
+  "homepage": "https://github.com/anishmprasad/react-segment#readme",
   "keywords": [
     "react-component",
     "react",
