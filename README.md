@@ -33,12 +33,6 @@ if(process.env.NODE_ENV == 'development'){
 
 Don't see your prop? explaining your use case, and I will add it.
 
-Packages Needed
----------------
-* prop-types : ^15.5.4
-* react : ^15.4.2
-* react-dom : ^15.4.2
-
 
 Issues
 ------
