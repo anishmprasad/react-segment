@@ -62,7 +62,7 @@
     "@segment/eslint-config": "^3.4.0",
     "browserify": "^13.1.0",
     "browserify-istanbul": "^2.0.0",
-    "eslint": "^6.0.1",
+    "eslint": "^6.2.2",
     "eslint-plugin-mocha": "^2.2.0",
     "eslint-plugin-require-path-exists": "^1.1.5",
     "istanbul": "^0.4.5",
