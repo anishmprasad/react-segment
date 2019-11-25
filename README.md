@@ -36,7 +36,7 @@ Don't see your prop? explaining your use case, and I will add it.
 
 Issues
 ------
-Please [file an issue](https://github.com/Anishmprasad/react-segment/issues) if you find a bug, or need help.
+Please [file an issue](https://github.com/anishmprasad/react-segment/issues) if you find a bug, or need help.
 
 
 License
