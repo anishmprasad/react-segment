@@ -1,6 +1,6 @@
 "use strict";
 
-var analytics = function() {
+const analytics = function() {
     var analytics = window.analytics = window.analytics || [];
     if (!analytics.initialize)
         if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice.");
@@ -32,4 +32,4 @@ var analytics = function() {
   return analytics;
 }();
 
-exports.default = analytics;
+export default analytics;

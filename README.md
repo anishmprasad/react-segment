@@ -21,13 +21,13 @@ If you're developing using npm and CommonJS modules:
 let analytics = require('react-segment');
 
 if(process.env.NODE_ENV == 'development'){
-    analytics.default.load("DEVELOPMENT KEY");
+    analytics.load("DEVELOPMENT KEY");
 }else if(process.env.NODE_ENV == 'staging' ){
-    analytics.default.load("STAGING KEY");
+    analytics.load("STAGING KEY");
 }else if(process.env.NODE_ENV == 'pre-production'){
-    analytics.default.load("PRE-PRODUCTION KEY");
+    analytics.load("PRE-PRODUCTION KEY");
 }else if(process.env.NODE_ENV == 'production'){
-    analytics.default.load("PRODUCTION KEY");
+    analytics.load("PRODUCTION KEY");
 }
 ```
 
