@@ -1,6 +1,6 @@
 {
   "name": "react-segment",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "A react component for segment.io",
   "main": "index.js",
   "repository": {
