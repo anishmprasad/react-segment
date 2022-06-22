@@ -43,4 +43,4 @@ License
 -------
 The MIT License (MIT)
 
-Copyright (c) 2021 Anish M Prasad
+Copyright (c) 2022 Anish M Prasad

@@ -2,7 +2,7 @@
   "name": "react-segment",
   "version": "0.1.8",
   "description": "A react component for segment.io",
-  "main": "lib/index.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/anishmprasad/react-segment.git"
