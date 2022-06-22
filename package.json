@@ -1,116 +1,21 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "react-segment@^0.1.7",
-        "scope": null,
-        "escapedName": "react-segment",
-        "name": "react-segment",
-        "rawSpec": "^0.1.7",
-        "spec": ">=0.1.7 <0.1.7",
-        "type": "range"
-      },
-      "/Users/ghost/Downloads/react-KT"
-    ]
-  ],
-  "_from": "react-segment@>=0.1.7 <0.1.7",
-  "_id": "react-segment@0.1.7",
-  "_inCache": true,
-  "_location": "/react-segment",
-  "_nodeVersion": "7.10.0",
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/react-segment-0.1.7.tgz_1496238181363_0.8129479601047933"
-  },
-  "_npmUser": {
-    "name": "anish",
-    "email": "anish.m.prasad@gmail.com"
-  },
-  "_npmVersion": "4.2.0",
-  "_phantomChildren": {},
-  "_requested": {
-    "raw": "react-segment@^0.1.7",
-    "scope": null,
-    "escapedName": "react-segment",
-    "name": "react-segment",
-    "rawSpec": "^0.1.7",
-    "spec": ">=0.1.7 <0.1.7",
-    "type": "range"
-  },
-  "_requiredBy": [
-    "#DEV:/"
-  ],
-  "_resolved": "https://registry.npmjs.org/react-segment/-/react-segment-0.1.7.tgz",
-  "_shasum": "5c9afbdf12242ab499d8bd2fbfeeb1433c441fae",
-  "_shrinkwrap": null,
-  "_spec": "react-segment@^0.1.7",
-  "_where": "/Users/ghost/Downloads/react-KT",
-  "author": {
-    "name": "Anish M Prasad",
-    "email": "anish.m.prasad@gmail.com",
-    "url": "http://www.trailercafe.com/"
-  },
-  "bugs": {
-    "url": "https://github.com/anishmprasad/react-segment/issues"
-  },
-  "dependencies": {
-    "@ndhoule/map": "^2.0.1"
-  },
+  "name": "react-segment",
+  "version": "0.1.8",
   "description": "A react component for segment.io",
-  "devDependencies": {
-    "@segment/clear-env": "^2.0.3",
-    "@segment/eslint-config": "^3.4.0",
-    "browserify": "^13.1.0",
-    "browserify-istanbul": "^2.0.0",
-    "eslint": "^6.2.2",
-    "eslint-plugin-mocha": "^2.2.0",
-    "eslint-plugin-require-path-exists": "^1.1.5",
-    "istanbul": "^0.4.5",
-    "karma": "^1.1.0",
-    "karma-browserify": "^5.0.4",
-    "karma-chrome-launcher": "^1.0.1",
-    "karma-coverage": "^1.0.0",
-    "karma-junit-reporter": "^1.0.0",
-    "karma-mocha": "1.0.1",
-    "karma-phantomjs-launcher": "^1.0.0",
-    "karma-sauce-launcher": "^1.0.0",
-    "karma-spec-reporter": "0.0.26",
-    "lodash": "^4.15.0",
-    "matcha": "^0.7.0",
-    "mkdirp": "^0.5.1",
-    "mocha": "~1.12.1",
-    "sinon": "^1.17.5"
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anishmprasad/react-segment.git"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "5c9afbdf12242ab499d8bd2fbfeeb1433c441fae",
-    "tarball": "https://registry.npmjs.org/react-segment/-/react-segment-0.1.7.tgz"
-  },
-  "gitHead": "e037c5e7e6b3c84a55d1e13e7cd64e81ebf6e3b0",
-  "homepage": "https://github.com/anishmprasad/react-segment#readme",
   "keywords": [
     "react-component",
     "react",
     "segmentio"
   ],
+  "author": "Anish M Prasad",
   "license": "MIT",
-  "main": "lib/index.js",
-  "maintainers": [
-    {
-      "name": "anish",
-      "email": "anish.m.prasad@gmail.com"
-    }
-  ],
-  "name": "react-segment",
-  "optionalDependencies": {},
-  "peerDependencies": {
-    "react": "^16.0.0"
+  "bugs": {
+    "url": "https://github.com/anishmprasad/react-segment/issues"
   },
-  "readme": "ERROR: No README data found!",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/anishmprasad/react-segment.git"
-  },
-  "scripts": {},
-  "version": "0.1.7"
+  "homepage": "https://github.com/anishmprasad/react-segment#readme"
 }
